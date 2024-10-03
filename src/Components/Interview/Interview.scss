@@ -1,16 +1,16 @@
 .interview {
-    margin-top: 70px;
+    padding-top: 70px;
     width: 100%;
     padding-bottom: 60px;
     background: white;
 
     @include media (850px) {
-        margin-top: 32px;
+        padding-top: 32px;
         padding-bottom: 40px;
     }
 
     @include media (550px) {
-        margin-top: 32px;
+        padding-top: 32px;
         padding-bottom: 24px;
     }
 
