@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Berlingske Serif';
+    src: url('/path/to/fonts/BerlingskeSerif.woff2') format('woff2'),
+        url('/path/to/fonts/BerlingskeSerif.woff') format('woff'),
+        url('/path/to/fonts/BerlingskeSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Berlingske Serif';
+    src: url('/path/to/fonts/BerlingskeSerif.woff2') format('woff2'),
+        url('/path/to/fonts/BerlingskeSerif.woff') format('woff'),
+        url('/path/to/fonts/BerlingskeSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+
+@import './mixins.scss';
+@import '../../Components/Nav/Nav.scss',
+'../../Components/Upcoming/Upcoming.scss',
+'../../Components/Interview/Interview.scss',
+'../../Components/Quote/Quote.scss',
+'../../Components/Footer/Footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(245, 245, 247, 1);
+
+}
+
+.container {
+    width: 88%;
+    margin-left: 6%;
+
+    @include media(800px) {
+        width: 90%;
+        margin-left: 5%;
+    }
+}

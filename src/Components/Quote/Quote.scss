@@ -1,0 +1,165 @@
+.quote {
+    margin-top: 80px;
+
+    @include media(900px) {
+        margin-top: 48px;
+    }
+
+    @include media(550px) {
+        margin-top: 24px;
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+
+    }
+
+
+
+    &_card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 90px 50px;
+        background: white;
+        border-radius: 16px;
+
+        @include media (1100px) {
+            padding: 50px;
+        }
+
+        @include media(550px) {
+            gap: 12px;
+            padding: 20px;
+        }
+    }
+
+    &_title {
+        font-family: 'Cambria', 'Georgia', serif;
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 72px;
+        text-align: center;
+        max-width: 1175px;
+        width: 100%;
+    }
+
+    &_text {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        max-width: 916px;
+        width: 100%;
+    }
+
+    &_link {
+        text-decoration: none;
+        background: black;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        padding: 16px 32px;
+        border-radius: 8px;
+        margin-top: 24px;
+
+        @include media (550px) {
+            font-size: 12px;
+            line-height: 16px;
+            padding: 8px 16px;
+            margin-top: 12px;
+
+        }
+    }
+
+    &_box2 {
+        display: flex;
+        gap: 32px;
+
+        @include media(1100px) {
+            flex-direction: column;
+        }
+    }
+
+    &_card2 {
+        width: 100%;
+        background: white;
+        padding: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border-radius: 16px;
+
+        @include media(550px) {
+            gap: 12px;
+            padding: 20px;
+        }
+    }
+
+    &_title2 {
+        font-family: 'Cambria', 'Georgia', serif;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 47.99px;
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &_text2 {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: center;
+        max-width: 723px;
+        width: 100%;
+    }
+
+    &_title2,
+    &_title {
+        @include media(900px) {
+            font-size: 40px;
+            line-height: 47.99px;
+            max-width: 508px;
+        }
+
+        @include media(550px) {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: 400;
+
+        }
+    }
+
+    &_text,
+    &_text2 {
+        @include media (900px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @include media (550px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+    }
+    &_box,
+    &_box2 {
+        @include media(550px) {
+            gap: 24px
+        }
+    }
+
+}

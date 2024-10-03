@@ -1,0 +1,118 @@
+.nav {
+    position: fixed;
+    // top: 40px;
+    width: 100%;
+    z-index: 12;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    &_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        position: relative;
+
+        @include media(1010px) {
+            gap: 26px;
+        }
+
+
+    }
+
+    &_list {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+
+        @include media(1010px) {
+            gap: 26px;
+        }
+
+        @include media (570px) {
+            display: none;
+        }
+    }
+
+    &_link {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+
+        @include media(1000px) {
+            font-size: 14px;
+        }
+
+        @include media(800px) {
+            font-size: 12px;
+        }
+    }
+
+    &_logo {
+
+        img {
+            width: 280px;
+            z-index: 999999999;
+
+            @include media(1000px) {
+                width: 200px;
+            }
+
+            @include media(800px) {
+                width: 140px;
+            }
+        }
+    }
+
+    &_list2 {
+        display: none;
+
+        @include media (570px) {
+            top: -40px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            // justify-content: center;
+            padding-top: 140px;
+            align-items: center;
+            background-color: black;
+            width: 100vw;
+            height: 60vh;
+            transition: .3s;
+            transform: translateY(-110%);
+        }
+
+        &.active {
+            transform: translate(0);
+        }
+    }
+
+    &_menu,
+    &_close {
+        color: white;
+        order: 1;
+        font-size: 32px;
+        display: none;
+
+        @include media (570px) {
+            display: block;
+            position: absolute;
+            top: -5px;
+            right: 0;
+        }
+    }
+
+    &_close {
+        top: 32px;
+        right: 20px;
+        font-size: 35px;
+    }
+
+    &_logo2 {
+        position: absolute;
+        top: 40px;
+    }
+}

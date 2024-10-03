@@ -1,0 +1,113 @@
+.upcoming {
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        object-position: center;
+
+        @include media(1200px) {
+            object-position: 20% 20%;
+        }
+
+        @include media (500px) {
+            object-position: center;
+            height: 90vh;
+        }
+    }
+
+    &_border {
+        position: relative;
+    }
+
+    &_box {
+        position: absolute;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%);
+        top: 0;
+        height: 100%;
+    }
+
+    &_card {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+        @include media (500px) {
+            height: 90vh;
+        }
+    }
+
+    &_card_text {
+        position: absolute;
+        right: 0;
+        bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @include media(800px) {
+            bottom: 50px;
+        }
+
+        @include media(500px) {
+            right: unset;
+            left: 0;
+            gap: 16px;
+            bottom: 32px;
+        }
+    }
+
+    &_title {
+        max-width: 745px;
+        width: 100%;
+        font-family: 'Berlingske Serif', serif;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 80px;
+        color: white;
+
+        @include media(1150px) {
+            line-height: 70px;
+            font-size: 55px;
+        }
+
+        @include media(1000px) {
+            line-height: 50px;
+            font-size: 48px;
+        }
+
+        @include media(800px) {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        @include media(400px) {
+            font-size: 24px;
+            line-height: 32px;
+
+        }
+    }
+
+    &_link {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(209, 199, 169, 1);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        @include media (500px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &_icon {
+        font-size: 22px;
+    }
+}
