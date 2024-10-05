@@ -1,23 +1,22 @@
 .quote {
-    margin-top: 80px;
+    padding-top: 80px;
+    background: rgba(245, 245, 247, 1);
+    padding-bottom: 120px;
 
     @include media(900px) {
-        margin-top: 48px;
+        padding-top: 48px;
+        padding-bottom: 50px;
     }
 
     @include media(550px) {
-        margin-top: 24px;
+        padding: 24px 0;
     }
 
     &_box {
         display: flex;
         flex-direction: column;
         gap: 32px;
-
-
     }
-
-
 
     &_card {
         width: 100%;
@@ -28,7 +27,7 @@
         padding: 90px 50px;
         background: white;
         border-radius: 16px;
-
+        text-decoration: none;
         @include media (1100px) {
             padding: 50px;
         }
@@ -99,6 +98,7 @@
         align-items: center;
         gap: 24px;
         border-radius: 16px;
+        text-decoration: none;
 
         @include media(550px) {
             gap: 12px;
@@ -124,10 +124,13 @@
         text-align: center;
         max-width: 723px;
         width: 100%;
+
     }
 
     &_title2,
     &_title {
+        color: black;
+
         @include media(900px) {
             font-size: 40px;
             line-height: 47.99px;
@@ -144,6 +147,8 @@
 
     &_text,
     &_text2 {
+        color: black;
+
         @include media (900px) {
             font-size: 18px;
             line-height: 24px;
@@ -155,6 +160,7 @@
         }
 
     }
+
     &_box,
     &_box2 {
         @include media(550px) {

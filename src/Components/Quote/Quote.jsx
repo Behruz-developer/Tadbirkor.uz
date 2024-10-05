@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Quote = () => {
     return (
         <div className='quote'>
             <div className="container">
                 <div className="quote_box">
-                    <div className="quote_card">
+                    <NavLink to={'/deportment1'} className="quote_card">
                         <h2 className="quote_title">
                             Ўзбекистон савдо - саноат палатаси хакида
                             ва унинг вазифалари
@@ -20,8 +21,8 @@ const Quote = () => {
                         <a href="#!" className="quote_link">
                             Узнать больше
                         </a>
-                    </div>
-                    <div className="quote_card">
+                    </NavLink>
+                    <NavLink to={'/deportment1'} className="quote_card">
                         <h2 className="quote_title">
                             Ўзбекистон савдо - саноат палатаси хакида
                             ва унинг вазифалари
@@ -36,9 +37,9 @@ const Quote = () => {
                         <a href="#!" className="quote_link">
                             Узнать больше
                         </a>
-                    </div>
+                    </NavLink>
                     <div className="quote_box2">
-                        <div className="quote_card2">
+                        <NavLink to={'/deportment1'} className="quote_card2">
                             <h2 className='quote_title2'>Мамлакатимизда
                                 тадбиркорлик ва бизнес
                                 юритиш натижадорлиги
@@ -57,8 +58,8 @@ const Quote = () => {
                             <a href="#!" className="quote_link">
                                 Узнать больше
                             </a>
-                        </div>
-                        <div className="quote_card2">
+                        </NavLink>
+                        <NavLink to={'/deportment1'} className="quote_card2">
                             <h2 className='quote_title2'>Мамлакатимизда
                                 тадбиркорлик ва бизнес
                                 юритиш натижадорлиги
@@ -77,7 +78,7 @@ const Quote = () => {
                             <a href="#!" className="quote_link">
                                 Узнать больше
                             </a>
-                        </div>
+                        </NavLink>
                     </div>
                 </div>
             </div>
