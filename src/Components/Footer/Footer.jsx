@@ -7,7 +7,7 @@ const links = [
     { url: '/about', name: 'О проекте' },
     { url: '/contact', name: 'Контакты' },
 ]
-const Footer = () => {
+const Footer = () => { 
     return (
         <footer className='footer'>
             <div className="container">
@@ -80,7 +80,6 @@ const Footer = () => {
                                     />
                                 </svg>
                             </a>
-
                             <a href="https://t.me/tadbirkoruzbekistan_uz" className='footer_icon'>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -95,19 +94,16 @@ const Footer = () => {
                                     />
                                 </svg>
                             </a>
-
-
                         </div>
                     </div>
                 </div>
-
                 <div className="footer_end">
-                    <p className='footer_end_text '>©2022 Tadbirkor Uzbekistan</p>
+                    <p className='footer_end_text '>©2022-2024 Tadbirkor Uzbekistan</p>
                     <p className='footer_end_text'>Разработано в birga.agency</p>
                 </div>
-            </div>                      
-        </footer>  
-    ) 
+            </div>
+        </footer>
+    )
 }
 
 export default Footer

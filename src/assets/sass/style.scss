@@ -299,7 +299,7 @@ body {
     }
 
     &_tag {
-        padding: 12px 32px;
+        padding: 8px 32px;
         background: rgba(238, 239, 243, 1);
         border-radius: 8px;
         text-decoration: none;
@@ -312,7 +312,7 @@ body {
         @include media(1110px) {
             font-size: 14px;
             line-height: 20px;
-            padding: 12px 24px;
+            padding: 8px 24px;
         }
 
         @include media (870px) {
@@ -320,7 +320,7 @@ body {
         }
 
         @include media (670px) {
-            padding: 8px 16px;
+            // padding: 8px 16px;
 
         }
 
@@ -333,7 +333,6 @@ body {
 }
 
 .contact {
-
     &_box {
         display: flex;
         flex-direction: column;
@@ -503,6 +502,14 @@ body {
                 max-width: 282px;
             }
         }
+
+        &--second2 {
+            max-width: 1175px;
+        }
+
+        &--department3 {
+            margin: 0 auto;
+        }
     }
 
     &_text {
@@ -523,6 +530,16 @@ body {
             font-size: 15px;
             line-height: 20px;
         }
+
+        &--second {
+            max-width: 1182px;
+
+            @include media (800px) {
+                max-width: 656px;
+
+            }
+        }
+
     }
 
     &_card_bottom {
@@ -540,16 +557,328 @@ body {
 
         &_box {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 42%);
             justify-content: center;
             flex-wrap: wrap;
             gap: 24px;
 
-            @include media (600px) {
-                grid-template-columns: repeat(1, 1fr);
+            @include media (1450px) {
+                grid-template-columns: repeat(2, 50%);
 
             }
 
+            @include media (600px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 12px;
+            }
+
+            &.department22 {
+                margin-top: 40px;
+
+                @include media (800px) {
+                    margin-top: 20px;
+                }
+
+                @include media (600px) {
+                    margin-top: 12px;
+                }
+            }
+
+        }
+    }
+}
+
+.department2 {
+    padding-top: 150px;
+
+    @include media (800px) {
+        padding-top: 100px;
+    }
+
+    @include media (600px) {
+        padding-top: 90px;
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+
+
+    &_box {
+        margin-top: 48px;
+
+        @include media (800px) {
+            margin-top: 24px;
+        }
+
+        @include media (800px) {
+            margin-top: 12px;
+        }
+    }
+
+    &_card_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        @include media (800px) {
+            gap: 20px;
+        }
+
+        @include media (600px) {
+            gap: 10px;
+        }
+    }
+}
+
+.department3 {
+    padding-top: 150px;
+
+    @include media (800px) {
+        padding-top: 100px;
+    }
+
+    @include media (600px) {
+        padding-top: 90px;
+    }
+
+    &_title_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        @include media (800px) {
+            gap: 12px;
+        }
+
+        @include media (600px) {}
+    }
+
+    &_text_card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include media (800px) {
+            gap: 18px;
+
+        }
+
+        @include media (600px) {}
+    }
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        @include media (800px) {
+            gap: 40px;
+        }
+    }
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        @include media (650px) {
+            gap: 20px;
+        }
+
+
+        &_box {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+
+            @include media (1600px) {
+                gap: 8%;
+            }
+
+            @include media (1500px) {
+                gap: 6%;
+            }
+
+            @include media (800px) {}
+
+            @include media (650px) {
+                align-items: center;
+                flex-direction: column;
+                gap: 18px;
+            }
+        }
+
+        &_progress {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            @include media (900px) {
+                gap: 24px;
+            }
+
+            @include media (650px) {
+                max-width: 200px;
+
+            }
+
+            &_text {
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28.63px;
+
+                @include media (1200px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                @include media (900px) {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    &_statistic {
+        margin-top: 64px;
+
+        @include media(800px) {
+            margin-top: 32px;
+        }
+
+        @include media(650px) {
+            margin-top: 16 px;
+        }
+
+        &_border {
+            width: 100%;
+            height: 1px;
+            background: rgba(180, 183, 194, 1);
+        }
+
+        &_box {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        &_card {
+            display: flex;
+            justify-content: space-between;
+
+            @include media (700px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            &_left {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 500px;
+                width: 100%;
+
+                @include media (1600px) {
+                    max-width: 450px;
+                    gap: 12px;
+                }
+
+                @include media (1200px) {
+                    max-width: 400px;
+                    gap: 12px;
+                }
+
+                @include media (1050px) {
+                    max-width: 320px;
+                    gap: 12px;
+                }
+            }
+        }
+
+        &_img {
+            width: 100px;
+            height: 30px;
+            margin: auto 0;
+
+            @include media (1600px) {
+                width: 50px;
+                height: 15px;
+            }
+
+            @include media (900px) {
+                margin: auto 15px;
+            }
+
+            @include media (700px) {
+                transform: rotate(90deg);
+                display: block;
+                width: 25px;
+                height: 10px;
+            }
+        }
+
+        &_title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48.84px;
+
+            @include media (1600px) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            @include media (1050px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            @include media (700px) {
+                text-align: center;
+            }
+        }
+
+        &_text {
+            max-width: 500px;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 32px;
+            text-align: left;
+
+            @include media (1250px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            @include media (1050px) {
+                font-size: 14px;
+                line-height: 20px;
+
+            }
+
+            @include media (700px) {
+                text-align: center;
+            }
         }
     }
 }

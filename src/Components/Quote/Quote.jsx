@@ -22,7 +22,7 @@ const Quote = () => {
                             Узнать больше
                         </a>
                     </NavLink>
-                    <NavLink to={'/deportment1'} className="quote_card">
+                    <NavLink to={'/deportment2'} className="quote_card">
                         <h2 className="quote_title">
                             Ўзбекистон савдо - саноат палатаси хакида
                             ва унинг вазифалари
@@ -39,7 +39,7 @@ const Quote = () => {
                         </a>
                     </NavLink>
                     <div className="quote_box2">
-                        <NavLink to={'/deportment1'} className="quote_card2">
+                        <NavLink to={'/deportment3'} className="quote_card2">
                             <h2 className='quote_title2'>Мамлакатимизда
                                 тадбиркорлик ва бизнес
                                 юритиш натижадорлиги

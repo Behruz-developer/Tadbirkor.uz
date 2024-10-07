@@ -8,6 +8,8 @@ import Business from './Pages/Business'
 import Founder from './Pages/Founder'
 import Contact from './Pages/Contact'
 import Department1 from './Pages/Department1'
+import Department2 from './Pages/Department2'
+import Department3 from './Pages/Department3.jsx'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
           <Route path='/interview' element={<Founder />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/deportment1' element={<Department1 />} />
+          <Route path='/deportment2' element={<Department2 />} />
+          <Route path='/deportment3' element={<Department3 />} />
         </Route>
       </Routes>
     </BrowserRouter>
