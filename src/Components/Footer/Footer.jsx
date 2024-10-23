@@ -9,7 +9,7 @@ const links = [
 ]
 const Footer = () => { 
     return (
-        <footer className='footer'>
+        <footer className='footer'>      
             <div className="container">
                 <div className="footer_box">
                     <div className="footer_card_left">
