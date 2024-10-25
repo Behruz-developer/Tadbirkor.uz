@@ -31,6 +31,54 @@ const Interview = ({ title, showButton, style }) => {
                             </p>
                         </div>
                     </NavLink>
+                    <NavLink to="/business" className="interview_card">
+                        <img className='interview_img' src={interview1} alt="" />
+                        <p className="interview_subtitle">«Обучение сотрудников — <br />
+                            преимущество работодателя»: <br />
+                            чем бизнесу полезны <br />
+                            образовательные платформы
+                        </p>
+                        <p className="interview_text">
+                            Дмитрий Бороздин о расходах на внедрение <br />
+                            и работу CRM-систем, перспективах e-commerce <br /> 
+                            и том, как ИИ помогает бизнесу работать <br />
+                            с клиентами
+                        </p>
+                        <div className="interview_description">
+                            <p className="interview_description_text">
+                                24 октября
+                            </p>
+                            <p className="interview_description_text">
+                                #мнения
+                            </p>
+                            <p className="interview_description_text">
+                                #франшиза
+                            </p>
+                        </div>
+                    </NavLink>
+                    <NavLink to="/business" className="interview_card">
+                        <img className='interview_img' src={interview1} alt="" />
+                        <p className="interview_subtitle">Шесть шагов по запуску <br />
+                            франшизы, которую будут <br />
+                            покупать
+                        </p>
+                        <p className="interview_text">
+                            Эксперт по франчайзингу Сергей Дегтярев — <br />
+                            о том, когда нужно создавать франшизу и как это
+                            делать грамотно
+                        </p>
+                        <div className="interview_description">
+                            <p className="interview_description_text">
+                                24 октября
+                            </p>
+                            <p className="interview_description_text">
+                                #мнения
+                            </p>
+                            <p className="interview_description_text">
+                                #франшиза
+                            </p>
+                        </div>
+                    </NavLink>
                 </div>
                 {showButton && <button className='interview_btn'>Посмотреть все</button>}
             </div>

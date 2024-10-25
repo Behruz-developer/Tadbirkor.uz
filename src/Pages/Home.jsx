@@ -13,7 +13,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Upcoming />
+      {/* <Upcoming /> */}
       <Interview showButton={true} title={'Истории наших героев'} />
       <Quote />
     </>
