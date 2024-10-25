@@ -32,105 +32,34 @@
         }
     }
 
-    &_box {
-        margin-top: 56px;
-        margin-bottom: 48px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-
-        @include media (1150px) {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        @include media (850px) {
-            margin-bottom: 40px;
-            margin-top: 32px;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include media (450px) {
-            margin-bottom: 32px;
-            margin-top: 32px;
-            grid-template-columns: repeat(1, 1fr);
-        }
+    &_card {
+        max-width: 368px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-decoration: none;
     }
 
     &_img {
         width: 100%;
-        transition: .3s;
-        display: block;
+    }   
+    &_subtitle{
+        font-size: 21px;
+        line-height: 26px;
+        color: black;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
     }
 
-    &_card {
-        max-width: 400px;
-        width: 100%;
-        position: relative;
-        border-radius: 16px;
-        overflow: hidden;
-        display: block;
+    &_text{
+        color: black;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+
     }
-
-    &_card:hover &_img {
-        transform: scale(1.1);
-    }
-
-    &_card_text {
-        background: linear-gradient(180deg, rgba(50, 50, 50, 0) 0%, #121212 100%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        position: absolute;
-        width: 100%;
-        height: 50%;
-        bottom: 0;
-        gap: 10px;
-    }
-
-    &_subtitle {
-        color: white;
-        font-family: 'Berlingske Serif', serif;
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 40px;
-        text-align: center;
-
-        @include media (1500px) {
-            font-size: 28px;
-            line-height: 35px;
-        }
-
-        @include media (1350px) {
-            font-size: 24px;
-            line-height: 30px;
-        }
-    }
-
-    &_text {
-        font-family: 'Helvetica Neue', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 24px;
-        text-align: center;
-        color: white;
-        margin-bottom: 32px;
-        max-width: 300px;
-        width: 100%;
-
-        @include media (1500px) {
-            margin-bottom: 24px;
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        @include media (1350px) {
-            font-size: 14px;
-            line-height: 20px;
-            margin-bottom: 20px;
-        }
-    }
-
     &_btn {
         background: black;
         color: white;
@@ -156,6 +85,18 @@
             padding: 16px 32px;
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+
+    &_description{
+        display: flex;
+        gap: 11px;
+
+        &_text{
+            font-size: 15px;
+            color: #757575;
+            line-height: 24px;
+            font-family: 'Inter', sans-serif;
         }
     }
 }
