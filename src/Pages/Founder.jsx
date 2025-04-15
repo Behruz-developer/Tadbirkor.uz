@@ -45,7 +45,7 @@ const Founder = () => {
                         ))}
                     </div>
                 </div>
-                <Interview showButton={false} style={interviewStyle} />
+                {/* <Interview showButton={false} style={interviewStyle} /> */}
             </div>
         </div>
     );
